@@ -34,9 +34,11 @@ public interface ResponseListener {
 	 *
 	 * @param food			the food item from the response
 	 */
-	default public void onFoodResponse(Food food) {
-		System.out.println("ResponseListener onFoodResponse");
-	}
+	default public HashMap<String,Object> onFoodResponse(Food food) {
+        	System.out.println("ResponseListener onFoodResponse");
+        	HashMap<String, Object> hashmap = null;
+        	return hashmap;
+    	}
 	
 	/**
 	 * Called when a compact food list response is received.
